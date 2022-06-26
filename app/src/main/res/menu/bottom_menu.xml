@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/main"
+        android:icon="@drawable/ic_menu"
+        android:title="@string/home"/>
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home"
+        android:title="@string/how_to_play"/>
+
+    <item
+        android:id="@+id/strat"
+        android:icon="@drawable/ic_tips"
+        android:title="@string/strategy"/>
+
+    <item
+        android:id="@+id/tips"
+        android:icon="@drawable/ic_about"
+        android:title="@string/lottery_tips"/>
+
+    <item
+            android:id="@+id/history"
+        android:icon="@drawable/ic_work"
+        android:title="@string/history"/>
+</menu>

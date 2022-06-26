@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="4dp"
+    android:clipToPadding="false"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:cardBackgroundColor="@color/orange"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent=".2"
+        android:layout_marginStart="8dp"
+        app:shapeAppearanceOverlay="@style/circleShapeAppearance"
+        app:strokeColor="@color/white"
+        app:strokeWidth="3dp">
+
+        <View
+            android:id="@+id/menuIcon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="12dp"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/ic_home" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/materialCardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cardBackgroundColor="@color/violet"
+        app:shapeAppearanceOverlay="@style/circleShapeAppearance"
+        app:strokeWidth="3dp"
+        app:strokeColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/materialCardView"
+        app:layout_constraintTop_toTopOf="@+id/materialCardView" >
+        <TextView
+            android:id="@+id/menuTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:text="Menu"
+            android:textSize="32dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:shadowColor="@color/black"
+            android:shadowRadius="5"/>
+    </com.google.android.material.card.MaterialCardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
